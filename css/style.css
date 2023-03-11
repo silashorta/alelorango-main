@@ -97,15 +97,17 @@
   
 .como-participar-titulo{
     text-align: center;
-    background-color: var(--branco-fundo);
-    color: var(--cor-primaria);
-    text-shadow: 2px 2px 5px #00000075;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bangers', cursive;
     font-size: 1em;
     margin-top: 2em;
     padding: 2em 6em;
 }
 
+.como-participar-titulo > h1{
+    font-size: 3em;
+    color: var(--cor-primaria);
+    /* text-shadow: 2px 2px 2px #00000075; */
+}
 .texto-principal img{
     max-width: 100%;
 }
@@ -212,6 +214,13 @@
     align-items: center;
 }
 
+.row-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
 .footer-logo{
     width: 5em;
 }
@@ -261,6 +270,10 @@
     }
     .card{
         width: 100%;
+    }
+
+    .card-numero, .card-texto{
+        margin: 0;
     }
 
     #premios{
