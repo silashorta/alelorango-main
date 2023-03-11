@@ -29,6 +29,9 @@
     --branco-fundo: #F2F2F0;
 }
 
+body{
+    background-color: var(--branco-fundo);
+}
 .header {
     position: fixed;
     z-index: 1;
@@ -198,10 +201,21 @@
 }
 
 
-#regulamento{
-    background-image: url("../image/bg.png");
-    height: 100vh;
-    color: #fff;
+#regulamentos{
+    padding: 2em 4em;
+    background-color: var(--branco-fundo);
+    margin: 0;
+    height: auto;
+}
+
+.texto-reg-titulo{
+    font-family: 'AleloTitulo';
+    color: var(--cor-primaria);
+}
+
+.texto-reg-paragrafo{
+    font-family: 'AleloTextoRegular';
+    color: var(--cor-primaria);
 }
 
 .rodape {
@@ -261,7 +275,7 @@
     }
 
     .rotated {
-        transform: rotate(90deg);
+        transform: rotate(180deg);
       }
       
      .menu__lista-resp{
