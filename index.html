@@ -7,32 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alelo Rango</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/tw10.css"> -->
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header class="header">
-        <div class="menu">
+<body class="container">
+    <header class="header-resp">
+        <div class="menu-resp">
             <div class="menu__logo">
                 <a href="index.html"><img src="image/logo.svg" alt="logo da alelo" class="menu__logo-imagem"></a>
             </div>
-            <div>
-                <ul class="menu__lista">
-                    <li class="menu__lista-item"><a href="#como-participar">Como Participar</a></li>
-                    <li class="menu__lista-item"><a href="#premios">Prêmios</a></li>
-                    <li class="menu__lista-item"><a href="">Meus números da sorte</a></li>
-                    <li class="menu__lista-item"><a href="">Ganhadores</a></li>
-                    <li class="menu__lista-item"><a href="regulamento.htm">Regulamento</a></li>
-                    <li class="menu__lista-item"><a href="">Dúvidas</a></li>
-                </ul>
-            </div>
         </div>
+        <nav>
+            <div class="header-icon">
+                <button id="botao-menu">Menu</button>
+            </div>
+        </nav>
+    </header>
+    <div class="menu-lista">
+        <ul class="menu__lista-resp">
+            <li class="menu__lista-item"><a href="#como-participar">Como Participar</a></li>
+            <li class="menu__lista-item"><a href="#premios">Prêmios</a></li>
+            <li class="menu__lista-item"><a href="">Meus números da sorte</a></li>
+            <li class="menu__lista-item"><a href="">Ganhadores</a></li>
+            <li class="menu__lista-item"><a href="regulamento.htm">Regulamento</a></li>
+            <li class="menu__lista-item"><a href="">Dúvidas</a></li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <div class="menu__logo" id="botao-menu">
+            <a href="index.html"><img src="image/logo.svg" alt="logo da alelo" class="menu__logo-imagem"></a>
+        </div>
+        <div>
+            <ul class="menu__lista">
+                <li class="menu__lista-item"><a href="#como-participar">Como Participar</a></li>
+                <li class="menu__lista-item"><a href="#premios">Prêmios</a></li>
+                <li class="menu__lista-item"><a href="">Meus números da sorte</a></li>
+                <li class="menu__lista-item"><a href="">Ganhadores</a></li>
+                <li class="menu__lista-item"><a href="regulamento.htm">Regulamento</a></li>
+                <li class="menu__lista-item"><a href="">Dúvidas</a></li>
+            </ul>
+        </div>
+    </div>
     </header>
     <main>
         <section class="main">
             <article class="texto-principal">
-                <img src="image/banner-principal.jpg" alt="" class="texto-principal">
+                <img src="image/banner-principal.jpg" alt="" class="banner-pricipal">
             </article>
         </section>
 
@@ -42,15 +65,20 @@
                 <div class="como-participar-corpo">
                     <div class="card" data-aos="fade-up">
                         <h2 class="card-numero">#1</h2>
-                        <p class="card-texto">Poste um Reels da sua comida com a hashtag <span>#AlelopagaomeuRango</span></p>
+                        <p class="card-texto">Poste um Reels da sua comida com a hashtag
+                            <span>#AlelopagaomeuRango</span>
+                        </p>
                     </div>
                     <div class="card" data-aos="fade-up">
                         <h2 class="card-numero">#2</h2>
-                        <p class="card-texto">Marque o perfil da Alelo no Instagram <span><a href="https://www.instagram.com/alelobrasil/" target="_blank">@alelobrasil</a></span>, o seu perfil deve ser público</p>
+                        <p class="card-texto">Marque o perfil da Alelo no Instagram <span><a
+                                    href="https://www.instagram.com/alelobrasil/"
+                                    target="_blank">@alelobrasil</a></span>, o seu perfil deve ser público</p>
                     </div>
                     <div class="card" data-aos="fade-up">
                         <h2 class="card-numero">#3</h2>
-                        <p class="card-texto">Entre os 10 reels mais vistos, vamos  selecionar os 3 mais legais para ganhar um cartão Alelo com R$ 200,00</p>
+                        <p class="card-texto">Entre os 10 reels mais vistos, vamos selecionar os 3 mais legais para
+                            ganhar um cartão Alelo com R$ 200,00</p>
                     </div>
                 </div>
             </article>
@@ -72,15 +100,17 @@
             </article>
         </section>
 
-        <section  id="premios">
+        <section id="premios">
             <div class="premios-div">
                 <h1 class="premios-texto-titulo" data-aos="fade-right">Prêmios</h1>
-                <p class="premios-texto-paragrafo" data-aos="fade-up">Cada um dos 21 (vinte e um) contemplados nesta promoção, na forma do item 3, receberá, como prêmio o valor líquido de R$ 500,00 (quinhentos reais) caso seja portador de cartão Alelo, ou o valor líquido de R$ 200,00 (duzentos reais) caso não seja.</p>
+                <p class="premios-texto-paragrafo" data-aos="fade-up">Cada um dos 21 (vinte e um) contemplados nesta
+                    promoção, na forma do item 3, receberá, como prêmio o valor líquido de R$ 500,00 (quinhentos reais)
+                    caso seja portador de cartão Alelo, ou o valor líquido de R$ 200,00 (duzentos reais) caso não seja.
+                </p>
             </div>
             <div class="premios-img">
-                <img src="image/stories_teaser.png" alt="" data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+                <img src="image/stories_teaser.png" alt="" data-aos="fade-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
             </div>
         </section>
     </main>
@@ -131,7 +161,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -34,6 +34,10 @@
     z-index: 1;
 }
 
+.header-resp{
+    display: none;
+}
+
 .menu {
     margin-right: 1em;
     display: flex;
@@ -43,6 +47,7 @@
     position: fixed;
     width: 100%;
     height: 5em;
+    z-index: 1;
 }
 
 .menu__logo-imagem {
@@ -54,6 +59,10 @@
     display: flex;
 }
 
+.menu__lista-resp{
+    display: none;
+}
+
 .menu__lista-item {
     list-style: none;
     margin: 1em;
@@ -63,14 +72,23 @@
     color: #fff;
 }
 
+.container{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .main {
     position: relative;
-    top: 83px;
+    top: 84px;
     background-image: url(../image/banner-principal.png);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100%;
     height: 100vh;
+    object-fit: contain;
 }
 
 .texto-principal {
@@ -79,15 +97,27 @@
     text-align: center;
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
+/* .banner-principal {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  } */
+  
 .como-participar-titulo{
     text-align: center;
     background-color: var(--branco-fundo);
     font-family: "AleloTitulo";
     font-size: 1em;
-    margin-top: 5em;
+    margin-top: ;
     padding: 2em 6em;
+}
+
+.texto-principal img{
+    max-width: 100%;
 }
 /*  .como-participar-corpo h2{
     font-size: 2em;
@@ -197,3 +227,58 @@
     font-family: "AleloTexto";
     text-align: center;
 }
+
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+    .header-resp{
+        display: flex;
+        background-color: var(--cor-secundaria);
+        position: fixed;
+        width: 100%;
+        height: 5em;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    }
+    .header-icon{
+        margin: 0 2em;
+    }
+
+     .menu__lista-resp{
+        display: none;
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor-primaria);
+        color: #fff;
+        z-index: 1;
+        text-align: center;
+        padding-top: 5em;
+        font-family: "AleloTitulo";
+        font-size: 1.5em;
+    }
+    .como-participar-titulo{
+        padding: 1em;
+    }
+    .card{
+        width: 90%;
+    }
+
+    #premios{
+        flex-direction: column;
+        padding: 2em 2em;
+    }
+    .premios-div{
+        padding: 2em 2em;
+    }
+
+    .premios-texto-paragrafo{
+        line-height: 1.5em;
+    }
+  }
+  
