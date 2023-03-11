@@ -254,8 +254,13 @@
         height: 30px;
         background: transparent;
         border: none;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
+
+    .rotated {
+        transform: rotate(90deg);
+      }
+      
      .menu__lista-resp{
         display: none;
         position: fixed;
