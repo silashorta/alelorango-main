@@ -24,6 +24,7 @@
 
 :root {
     --cor-primaria: #008160;
+    --verde-menu: #015A43;
     --cor-secundaria: #BDD654;
     --cor-terciaria: #FFDC51;
     --branco-fundo: #F2F2F0;
@@ -49,7 +50,7 @@ body{
     background-color: var(--cor-secundaria);
     position: fixed;
     width: 100%;
-    height: 5em;
+    height: 4.5em;
     z-index: 1;
 }
 
@@ -71,7 +72,12 @@ body{
 }
 
 .menu__lista-item a {
-    color: #fff;
+    color: var(--verde-menu);
+    font-weight: 500;
+}
+
+.menu__lista-item a:hover {
+    color: var(--cor-primaria);
 }
 
 .container{
@@ -248,6 +254,18 @@ body{
     text-align: center;
 }
 
+.rodape small{
+    color: var(--cor-primaria);
+}
+
+.rodape a small:hover{
+    color: var(--cor-secundaria);
+}
+
+.rodape small:visited{
+    color: var(--cor-primaria);
+}
+
 
 @media screen and (max-width: 768px) {
     .menu{
@@ -349,6 +367,16 @@ body{
     .premios-img{        
        width: 70%;
        margin: 0 auto;
+    }
+
+    #regulamentos{
+        padding: 1em;
+    }
+    #regulamentos ul{
+        padding: 0;
+    }
+    #regulamentos li{
+        margin: 1em 0;
     }
   }
   
