@@ -296,7 +296,8 @@
         position: relative;
         top: 80px;
         background-image: url(../image/bg.png);
-        height: 100%; /* altura desejada */
+        height: 100%;
+        padding: 1em 0;
       }
       
       .banner-mob img {
