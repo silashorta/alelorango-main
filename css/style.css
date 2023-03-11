@@ -251,6 +251,7 @@
     }
 
     #botao-menu{
+        height: 30px;
         background: transparent;
         border: none;
         transition: all 0.3s ease-in-out;
@@ -267,9 +268,17 @@
         z-index: 1;
         text-align: center;
         padding-top: 5em;
+        padding-left: 0;
         font-family: "AleloTitulo";
         font-size: 1.5em;
     }
+
+    .menu__lista-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
     .como-participar-titulo{
         padding: 1em;
     }
