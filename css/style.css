@@ -78,6 +78,10 @@
     max-height: 100%;
 }
 
+.banner-mob{
+    display: none;
+}
+
 .texto-principal {
     position: relative;
     top: 3.5em;
@@ -282,6 +286,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+    .texto-principal{
+        display: none;
+    }
+    .banner-mob {
+        display: block;
+        position: relative;
+        top: 80px;
+        background-image: url(../image/bg.png);
+        height: 1000px; /* altura desejada */
+      }
+      
+      .banner-mob img {
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: 100%;
+        object-fit: contain; /* faz com que a imagem se ajuste à altura da div */
       }
       
     .como-participar-titulo{
