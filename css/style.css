@@ -52,7 +52,6 @@
 
 .menu__logo-imagem {
     height: 3.5em;
-    padding-left: ;
 }
 
 .menu__lista {
@@ -254,7 +253,7 @@
         height: 30px;
         background: transparent;
         border: none;
-        transition: all 0.5s ease-in-out;
+        transition: all 1s ease-in-out;
     }
 
     .rotated {
@@ -276,6 +275,7 @@
         padding-left: 0;
         font-family: "AleloTitulo";
         font-size: 1.5em;
+        transition: all 0.5s ease-in-out;
     }
 
     .menu__lista-item {
