@@ -250,6 +250,11 @@
         margin: 0 2em;
     }
 
+    #botao-menu{
+        background: transparent;
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
      .menu__lista-resp{
         display: none;
         position: fixed;
