@@ -17,6 +17,7 @@
     font-family: "AleloTituloItalic";
     src: url("../fonts/AleloTitulo-ExtraboldItalic.ttf");
 }
+
 * {
     text-decoration: none;
     list-style: none;
@@ -30,15 +31,16 @@
     --branco-fundo: #F2F2F0;
 }
 
-body{
+body {
     background-color: var(--branco-fundo);
 }
+
 .header {
     position: fixed;
     z-index: 1;
 }
 
-.header-resp{
+.header-resp {
     display: none;
 }
 
@@ -62,7 +64,7 @@ body{
     display: flex;
 }
 
-.menu__lista-resp{
+.menu__lista-resp {
     display: none;
 }
 
@@ -76,18 +78,27 @@ body{
     font-weight: 500;
 }
 
+.menu__lista-item_resp {
+    padding: 1em;
+}
+
+.menu__lista-item_resp a {
+    color: var(--branco-fundo);
+    font-weight: 500;
+}
+
 .menu__lista-item a:hover {
     color: var(--cor-primaria);
 }
 
-.container{
+.container {
     width: 100%;
     height: auto;
     max-width: 100%;
     max-height: 100%;
 }
 
-.banner-mob{
+.banner-mob {
     display: none;
 }
 
@@ -106,66 +117,101 @@ body{
     max-width: 100%;
     max-height: 100%;
   } */
-  
-.como-participar-titulo{
+
+.como-participar-titulo {
     text-align: center;
-    font-family: 'Bangers', cursive;
+    /* font-family: 'Bangers', cursive; */
+    font-family: "AleloTitulo";
     font-size: 1em;
     margin-top: 2em;
-    padding: 2em 6em;
+    padding: 2em 2em;
+    background-image: url(../image/bg-parallax.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;;
 }
 
-.como-participar-titulo > h1{
+/* #img-parallax{
+    margin-top: 10em;
+} */
+
+.como-participar-titulo>h1 {
     font-size: 3em;
     color: var(--cor-primaria);
     /* text-shadow: 2px 2px 2px #00000075; */
 }
-.texto-principal img{
+
+.como-participar-itens {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.como-participar-itens_texto {
+    margin-top: 5em;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.como-participar-itens_texto img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    /* ajuste o valor para o que for apropriado para o seu conteúdo */
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.texto-principal img {
     max-width: 100%;
 }
+
 /*  .como-participar-corpo h2{
     font-size: 2em;
     margin: 0 auto;
 } */
-.como-participar-corpo p{
+.como-participar-corpo p {
     font-size: 1.25em;
 }
 
-.cards-imagem{
+.cards-imagem {
     width: 100px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
-    margin: 1em auto;
-    padding: 1.5em 0;
+    margin: 1em 2em;
     background-color: var(--cor-primaria);
-    width: 60%;
     height: auto;
     border-radius: 2em;
     box-shadow: 2px 2px 5px #00000080;
 }
-.card-texto{
+
+.card-texto {
     padding: 0.5em;
     font-size: 1em;
     font-family: "AleloTitulo";
     color: #fff;
 }
 
-.card-texto span{
+.card-texto span {
     color: var(--cor-secundaria);
 }
 
-.card-texto span a{
+.card-texto span a {
     text-decoration: none;
     color: var(--cor-secundaria);
 }
 
-.card-texto span a:visited{
+.card-texto span a:visited {
     color: var(--cor-secundaria);
 }
-.card-numero{
+
+.card-numero {
     text-align: center;
     color: var(--cor-terciaria);
     font-size: 2em;
@@ -173,53 +219,53 @@ body{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.699);
 }
 
-.texto-titulo{
+.texto-titulo {
     font-family: "AleloTitulo";
 }
 
-.texto-paragrafo{
+.texto-paragrafo {
     font-family: "AleloTextoRegular";
 }
 
-#premios{
+#premios {
     display: flex;
     background-image: url("../image/bg.png");
     color: #fff;
-   padding: 1em 4em;
+    padding: 1em 4em;
 
 }
 
-.premios-div{
+.premios-div {
     padding-top: 2.5em;
 }
 
-.premios-img img{
+.premios-img img {
     width: 90%;
 }
 
-.premios-texto-titulo{
+.premios-texto-titulo {
     font-family: "AleloTitulo";
 }
 
-.premios-texto-paragrafo{
+.premios-texto-paragrafo {
     font-family: "AleloTextoRegular";
     font-size: 1.2em;
 }
 
 
-#regulamentos{
+#regulamentos {
     padding: 2em 4em;
     background-color: var(--branco-fundo);
     margin: 0;
     height: auto;
 }
 
-.texto-reg-titulo{
+.texto-reg-titulo {
     font-family: 'AleloTitulo';
     color: var(--cor-primaria);
 }
 
-.texto-reg-paragrafo{
+.texto-reg-paragrafo {
     font-family: 'AleloTextoRegular';
     color: var(--cor-primaria);
 }
@@ -237,41 +283,42 @@ body{
     align-items: center;
 }
 
-.row-column{
+.row-column {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
-.footer-logo{
+.footer-logo {
     width: 5em;
 }
 
-.footer-autorizacao{
+.footer-autorizacao {
     margin: 2em;
     font-family: "AleloTexto";
     text-align: center;
 }
 
-.rodape small{
+.rodape small {
     color: var(--cor-primaria);
 }
 
-.rodape a small:hover{
+.rodape a small:hover {
     color: var(--cor-secundaria);
 }
 
-.rodape small:visited{
+.rodape small:visited {
     color: var(--cor-primaria);
 }
 
 
 @media screen and (max-width: 768px) {
-    .menu{
+    .menu {
         display: none;
     }
-    .header-resp{
+
+    .header-resp {
         display: flex;
         background-color: var(--cor-secundaria);
         position: fixed;
@@ -281,11 +328,12 @@ body{
         align-items: center;
         z-index: 1;
     }
-    .header-icon{
+
+    .header-icon {
         margin: 0 2em;
     }
 
-    #botao-menu{
+    #botao-menu {
         height: 30px;
         background: transparent;
         border: none;
@@ -294,9 +342,9 @@ body{
 
     .rotated {
         transform: rotate(180deg);
-      }
-      
-     .menu__lista-resp{
+    }
+
+    .menu__lista-resp {
         display: none;
         position: fixed;
         top: 56px;
@@ -318,11 +366,12 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+    }
 
-    .texto-principal{
+    .texto-principal {
         display: none;
     }
+
     .banner-mob {
         display: block;
         position: relative;
@@ -330,53 +379,58 @@ body{
         background-image: url(../image/bg.png);
         height: 100%;
         padding: 1em 0;
-      }
-      
-      .banner-mob img {
+    }
+
+    .banner-mob img {
         position: relative;
         max-width: 100%;
         max-height: 100%;
         height: auto;
         width: 100%;
-        object-fit: contain; /* faz com que a imagem se ajuste à altura da div */
-      }
-      
-    .como-participar-titulo{
+        object-fit: contain;
+        /* faz com que a imagem se ajuste à altura da div */
+    }
+
+    .como-participar-titulo {
         padding: 1em;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
 
-    .card-numero, .card-texto{
+    .card-numero,
+    .card-texto {
         margin: 0;
     }
 
-    #premios{
+    #premios {
         flex-direction: column;
         padding: 2em 2em;
     }
-    .premios-div{
+
+    .premios-div {
         padding: 2em 0;
     }
 
-    .premios-texto-paragrafo{
+    .premios-texto-paragrafo {
         line-height: 1.5em;
     }
 
-    .premios-img{        
-       width: 70%;
-       margin: 0 auto;
+    .premios-img {
+        width: 70%;
+        margin: 0 auto;
     }
 
-    #regulamentos{
+    #regulamentos {
         padding: 1em;
     }
-    #regulamentos ul{
+
+    #regulamentos ul {
         padding: 0;
     }
-    #regulamentos li{
+
+    #regulamentos li {
         margin: 1em 0;
     }
-  }
-  
+}
