@@ -395,8 +395,27 @@ body {
         padding: 1em;
     }
 
+    .como-participar-itens_texto, #img-foto{
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .como-participar-itens{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #img-parallax{
+        width: 80%;
+        display: none;
+    }
+
     .card {
-        width: 100%;
+        max-width: 90%;
+        padding: 0em;
     }
 
     .card-numero,
